@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-b2b-intel-mcp"
+version = "1.0.0"
+description = "MCP Server & CLI bridge for Polymarket/Kalshi Arbitrage, Crypto Perp Funding-Rate Carry, and B2B Shopify Tech-Stack Lead Intelligence via Apify Cloud."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Quant & B2B Intelligence Hub" }
+]
+keywords = [
+  "mcp",
+  "model-context-protocol",
+  "polymarket",
+  "kalshi",
+  "prediction-markets",
+  "arbitrage",
+  "funding-rate",
+  "perpetual-futures",
+  "hyperliquid",
+  "dydx",
+  "shopify-leads",
+  "apify"
+]
+dependencies = [
+  "mcp>=1.2.0"
+]
+
+[project.urls]
+Homepage = "https://zk16k123-svg.github.io/quant-b2b-intel-hub/"
+Repository = "https://github.com/zk16k123-svg/quant-b2b-intel-hub"
+"Polymarket & Kalshi Arbitrage Actor" = "https://apify.com/conscious_chuckwalla/prediction-market-arb-intel"
+"Crypto Perp Funding Carry Actor" = "https://apify.com/conscious_chuckwalla/crypto-funding-rate-carry-arb"
+"Shopify Leads & Tech Stack Actor" = "https://apify.com/conscious_chuckwalla/shopify-leads-tech-stack-intel"
+
+[project.scripts]
+quant-b2b-intel-mcp = "mcp_server:main"
+
+[tool.setuptools]
+py-modules = ["mcp_server"]

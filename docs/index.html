@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="en" class="entrance">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quant &amp; B2B Intelligence Hub — Polymarket &amp; Kalshi Arbitrage API, Crypto Perp Funding Carry &amp; MCP Server</title>
+  <meta name="description" content="24/7 live institutional terminal &amp; Model Context Protocol (MCP) server for Polymarket &amp; Kalshi arbitrage API, crypto perpetual funding rate arbitrage API (Hyperliquid, Kraken, dYdX), and Shopify leads tech stack API on Apify Cloud." />
+  <meta name="keywords" content="Polymarket Kalshi arbitrage API, crypto funding rate arbitrage API, prediction market MCP server, Shopify leads tech stack API, Hyperliquid funding rate API, delta neutral carry calculator, Apify MCP server" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zk16k123-svg.github.io/quant-b2b-intel-hub/" />
+
+  <!-- OpenGraph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Quant &amp; B2B Intelligence Hub" />
+  <meta property="og:title" content="Quant &amp; B2B Intelligence Hub — Live Arbitrage, Funding Carry &amp; MCP Terminal" />
+  <meta property="og:description" content="Hourly live spreads across Polymarket, Kalshi, Hyperliquid, Kraken Futures &amp; dYdX v4, plus instant MCP &amp; REST API execution via Apify Cloud." />
+  <meta property="og:url" content="https://zk16k123-svg.github.io/quant-b2b-intel-hub/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Quant &amp; B2B Intelligence Hub — Arbitrage, Carry &amp; B2B Intel API" />
+  <meta name="twitter:description" content="Live Polymarket × Kalshi arbitrage spreads, delta-neutral perp funding carry yields, Shopify tech-stack enrichment &amp; AI-Agent MCP server." />
+
+  <!-- JSON-LD SoftwareApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Quant & B2B Intelligence Hub & MCP Server",
+        "applicationCategory": "FinanceApplication, DeveloperApplication",
+        "operatingSystem": "Cross-platform (Cloud REST API, Python, MCP stdio)",
+        "url": "https://zk16k123-svg.github.io/quant-b2b-intel-hub/",
+        "downloadUrl": "https://github.com/zk16k123-svg/quant-b2b-intel-hub",
+        "description": "Real-time Polymarket Kalshi arbitrage API, crypto perpetual funding rate arbitrage API, Shopify leads tech stack API, and Model Context Protocol (MCP) server powered by Apify Cloud.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free hourly public telemetry terminal & Apify Cloud free-tier API credits"
+        },
+        "featureList": [
+          "Polymarket & Kalshi cross-venue arbitrage & L2 CLOB orderbook slippage API",
+          "Hyperliquid, Kraken Futures & dYdX v4 delta-neutral funding rate carry API",
+          "Shopify store leads, verified merchant emails & 40+ tech stack signature enricher",
+          "Claude Desktop, Cursor, Windsurf & Cline stdio MCP server"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Studio Typography: Instrument Serif + Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Entrance Hygiene & Reduced-Motion Failsafe -->
+  <script>
+    (function () {
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.remove('entrance');
+        return;
+      }
+      setTimeout(function () {
+        document.documentElement.classList.remove('entrance');
+      }, 3200);
+    })();
+  </script>
+
+  <style>
+    :root {
+      /* Architectural Hairline Grid + Archival Paper Polarity */
+      --bg-obsidian: #0B0C0E;
+      --bg-elevated: #101216;
+      --bg-cell-hover: #15181E;
+      --paper-bg: #F3EFE6;
+      --paper-well: #E8E2D5;
+      --paper-ink: #0B0C0E;
+      --paper-muted: #57544D;
+      --paper-dim: #858075;
+      --paper-hairline: rgba(11, 12, 14, 0.13);
+
+      /* Strict 4-Tier Dark Ink Hierarchy */
+      --ink-100: #F5F2EB;
+      --ink-76: rgba(245, 242, 235, 0.76);
+      --ink-54: rgba(245, 242, 235, 0.54);
+      --ink-34: rgba(245, 242, 235, 0.34);
+
+      /* Hairlines */
+      --hairline: rgba(255, 255, 255, 0.08);
+      --hairline-strong: rgba(255, 255, 255, 0.16);
+      --grid-guide: rgba(255, 255, 255, 0.038);
+
+      /* Strict US Financial Polarity (Green Up/Positive, Red Down/Negative, Neutral Slate) */
+      --pos-dark: #22C55E;
+      --pos-dark-bg: rgba(34, 197, 94, 0.10);
+      --pos-dark-border: rgba(34, 197, 94, 0.28);
+      --pos-light: #15803D;
+      --pos-light-bg: rgba(22, 163, 74, 0.10);
+
+      --neg-dark: #EF4444;
+      --neg-dark-bg: rgba(239, 68, 68, 0.10);
+      --neg-dark-border: rgba(239, 68, 68, 0.28);
+      --neg-light: #DC2626;
+
+      --neutral-ink: #8E939E;
+
+      /* Typography */
+      --font-serif: "Instrument Serif", Georgia, serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+      /* Master Gutter Alignment */
+      --gutter: 36px;
+      --max-w: 1480px;
+
+      /* Canonical Studio Easing Curves */
+      --ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-crisp: cubic-bezier(0.2, 0.8, 0.2, 1);
+      --ease-quint-out: cubic-bezier(0.22, 1, 0.36, 1);
+      --ease-dramatic: cubic-bezier(0.76, 0, 0.24, 1);
+      --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @media (max-width: 820px) {
+      :root {
+        --gutter: 20px;
+      }
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background-color: var(--bg-obsidian);
+      color: var(--ink-100);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-color: var(--bg-obsidian);
+    }
+
+    /* Subtle 35mm Archival Film Grain */
+    .film-grain {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      pointer-events: none;
+      opacity: 0.032;
+      mix-blend-mode: overlay;
+    }
+
+    /* Full-Bleed Architectural Hairline Backdrop */
+    .arch-grid-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      border-left: 1px solid var(--grid-guide);
+      border-right: 1px solid var(--grid-guide);
+    }
+    .arch-grid-backdrop::before,
+    .arch-grid-backdrop::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: var(--grid-guide);
+    }
+    .arch-grid-backdrop::before { left: 33.333%; }
+    .arch-grid-backdrop::after { left: 66.666%; }
+
+    .tabular {
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    :focus-visible {
+      outline: 1.5px solid var(--ink-100);
+      outline-offset: 2px;
+    }
+
+    .shell {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding-inline: var(--gutter);
+    }
+
+    /* Intersection Crosshair Ornament (+) */
+    .crosshair {
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      pointer-events: none;
+      z-index: 4;
+    }
+    .crosshair::before,
+    .crosshair::after {
+      content: "";
+      position: absolute;
+      background: rgba(245, 242, 235, 0.62);
+    }
+    .crosshair::before {
+      top: 4px; left: 0; width: 9px; height: 1px;
+    }
+    .crosshair::after {
+      left: 4px; top: 0; width: 1px; height: 9px;
+    }
+    .ch-tl { top: -5px; left: -5px; }
+    .ch-tr { top: -5px; right: -5px; }
+    .ch-bl { bottom: -5px; left: -5px; }
+    .ch-br { bottom: -5px; right: -5px; }
+
+    /* Top Technical Masthead (NO transform on <nav>!) */
+    header.masthead {
+      border-bottom: 1px solid var(--hairline);
+      background: rgba(11, 12, 14, 0.88);
+      backdrop-filter: blur(20px) saturate(125%);
+      -webkit-backdrop-filter: blur(20px) saturate(125%);
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      transition: opacity 0.5s var(--ease-crisp);
+    }
+
+    .masthead-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 60px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding-inline: var(--gutter);
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 26px;
+      height: 26px;
+      border: 1px solid var(--ink-100);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--ink-100);
+      white-space: nowrap;
+    }
+
+    .brand-sub {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: var(--ink-54);
+      padding-left: 12px;
+      border-left: 1px solid var(--hairline-strong);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 980px) {
+      .brand-sub { display: none; }
+    }
+
+    nav.top-nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      transition: opacity 0.45s var(--ease-crisp);
+    }
+
+    @media (max-width: 1120px) {
+      nav.top-nav { display: none; }
+    }
+
+    .nav-jump {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-54);
+      transition: color 0.2s var(--ease-crisp);
+    }
+    .nav-jump span {
+      color: var(--ink-34);
+      margin-right: 4px;
+    }
+    .nav-jump:hover {
+      color: var(--ink-100);
+    }
+
+    .masthead-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 4px 9px;
+      border: 1px solid var(--pos-dark-border);
+      background: var(--pos-dark-bg);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--pos-dark);
+    }
+
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--pos-dark);
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.22);
+      animation: pulse-beacon 5.8s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulse-beacon {
+      from { opacity: 0.55; transform: scale(0.92); }
+      to   { opacity: 1; transform: scale(1.08); }
+    }
+
+    /* Tactile Wipe Buttons */
+    .btn-wipe {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      overflow: hidden;
+      isolation: isolate;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 9px 15px;
+      transition: color 0.28s var(--ease-crisp), border-color 0.28s var(--ease-crisp), transform 0.12s var(--ease-crisp);
+      white-space: nowrap;
+    }
+    .btn-wipe:active {
+      transform: scale(0.975);
+    }
+    .btn-wipe::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.38s var(--ease-expo-out);
+    }
+    .btn-wipe:hover::before {
+      transform: scaleX(1);
+    }
+
+    .btn-ivory {
+      background: var(--paper-bg);
+      color: var(--paper-ink);
+      border: 1px solid var(--paper-bg);
+    }
+    .btn-ivory::before {
+      background: #DFD8C8;
+    }
+
+    .btn-obsidian {
+      background: var(--paper-ink);
+      color: var(--paper-bg);
+      border: 1px solid var(--paper-ink);
+    }
+    .btn-obsidian::before {
+      background: #23262D;
+    }
+
+    .btn-outline-dark {
+      background: rgba(255, 255, 255, 0.025);
+      color: var(--ink-100);
+      border: 1px solid var(--hairline-strong);
+    }
+    .btn-outline-dark::before {
+      background: rgba(255, 255, 255, 0.09);
+    }
+
+    .btn-outline-paper {
+      background: transparent;
+      color: var(--paper-ink);
+      border: 1px solid rgba(11, 12, 14, 0.28);
+    }
+    .btn-outline-paper::before {
+      background: rgba(11, 12, 14, 0.07);
+    }
+
+    /* Compact Prestige Editorial Cover Strip (Does NOT block workspace!) */
+    .cover-strip {
+      position: relative;
+      border-bottom: 1px solid var(--hairline);
+      padding: 34px 0 28px;
+    }
+
+    .cover-grid {
+      display: grid;
+      grid-template-columns: 1.28fr 1fr;
+      gap: 32px;
+      align-items: end;
+    }
+
+    @media (max-width: 980px) {
+      .cover-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    .eyebrow-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-54);
+    }
+
+    .eyebrow-tag {
+      padding: 2px 7px;
+      border: 1px solid var(--hairline-strong);
+      color: var(--ink-76);
+    }
+
+    /* Descender-Safe Masked Headline */
+    .hl-mask {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 0.16em;
+      margin-bottom: -0.16em;
+    }
+    .hl-line {
+      display: inline-block;
+    }
+    html.entrance .hl-line {
+      opacity: 0;
+      transform: translate3d(0, 112%, 0);
+      animation: hl-rise 0.88s var(--ease-expo-out) var(--delay, 0.08s) both;
+    }
+    @keyframes hl-rise {
+      from { opacity: 0; transform: translate3d(0, 112%, 0); }
+      16%  { opacity: 1; }
+      to   { opacity: 1; transform: translate3d(0, 0, 0); }
+    }
+
+    h1.hero-title {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: clamp(2.35rem, 4.3vw, 3.85rem);
+      line-height: 0.96;
+      letter-spacing: -0.025em;
+      color: var(--ink-100);
+    }
+    h1.hero-title em {
+      font-style: italic;
+      color: #E6DFCF;
+    }
+
+    .hero-lede {
+      font-size: 14.5px;
+      line-height: 1.55;
+      color: var(--ink-76);
+      max-width: 54ch;
+      margin-bottom: 18px;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* Monumental Bare Telemetry Strip (No boxy rounded cards!) */
+    .telemetry-strip {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-bottom: 1px solid var(--hairline);
+      border-left: 1px solid var(--hairline);
+      border-right: 1px solid var(--hairline);
+      background: rgba(16, 18, 22, 0.65);
+    }
+
+    @media (max-width: 900px) {
+      .telemetry-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 520px) {
+      .telemetry-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .kpi-cell {
+      padding: 18px 22px;
+      border-right: 1px solid var(--hairline);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6px;
+      min-width: 0;
+    }
+    .kpi-cell:last-child {
+      border-right: none;
+    }
+    @media (max-width: 900px) {
+      .kpi-cell:nth-child(2) { border-right: none; }
+      .kpi-cell:nth-child(1), .kpi-cell:nth-child(2) { border-bottom: 1px solid var(--hairline); }
+    }
+
+    .kpi-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-54);
+    }
+
+    .kpi-num {
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+      font-size: clamp(1.65rem, 2.7vw, 2.45rem);
+      font-weight: 500;
+      line-height: 0.92;
+      letter-spacing: -0.045em;
+      color: var(--ink-100);
+    }
+    .kpi-num.positive { color: var(--pos-dark); }
+    .kpi-num.negative { color: var(--neg-dark); }
+
+    .kpi-foot {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--ink-34);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Main Asymmetric Cockpit: 8-Col Obsidian Matrix + 4-Col Archival Paper Slip */
+    .cockpit-frame {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.95fr) minmax(330px, 1fr);
+      border-left: 1px solid var(--hairline);
+      border-right: 1px solid var(--hairline);
+      border-bottom: 1px solid var(--hairline);
+      background: var(--bg-obsidian);
+    }
+
+    @media (max-width: 1080px) {
+      .cockpit-frame {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .workspace-main {
+      min-width: 0;
+      border-right: 1px solid var(--hairline);
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: 1080px) {
+      .workspace-main {
+        border-right: none;
+        border-bottom: 1px solid var(--hairline);
+      }
+    }
+
+    /* Spring-Sliding Tab Bar */
+    .tab-bar-wrap {
+      position: relative;
+      border-bottom: 1px solid var(--hairline);
+      background: var(--bg-elevated);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .tab-bar-wrap::-webkit-scrollbar { display: none; }
+
+    .tab-bar {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+      min-width: max-content;
+    }
+
+    .tab-btn {
+      position: relative;
+      padding: 15px 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-54);
+      border-right: 1px solid var(--hairline);
+      transition: color 0.22s var(--ease-crisp), background-color 0.22s var(--ease-crisp);
+    }
+    .tab-btn:hover {
+      color: var(--ink-100);
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .tab-btn[aria-selected="true"] {
+      color: var(--ink-100);
+      background: rgba(255, 255, 255, 0.035);
+    }
+    .tab-idx {
+      color: var(--ink-34);
+      font-size: 10.5px;
+    }
+    .tab-btn[aria-selected="true"] .tab-idx {
+      color: var(--pos-dark);
+    }
+
+    .tab-indicator {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: var(--ink-100);
+      transition: transform 0.55s var(--ease-spring), width 0.55s var(--ease-spring);
+      pointer-events: none;
+    }
+
+    /* Filter / Sub-Toolbar */
+    .sub-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--hairline);
+      background: rgba(16, 18, 22, 0.45);
+    }
+
+    .seg-group {
+      display: inline-flex;
+      border: 1px solid var(--hairline-strong);
+      background: var(--bg-obsidian);
+    }
+
+    .seg-btn {
+      padding: 6px 12px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-54);
+      border-right: 1px solid var(--hairline);
+      transition: background-color 0.18s var(--ease-crisp), color 0.18s var(--ease-crisp);
+    }
+    .seg-btn:last-child { border-right: none; }
+    .seg-btn.active {
+      background: var(--paper-bg);
+      color: var(--paper-ink);
+      font-weight: 600;
+    }
+
+    .search-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--hairline-strong);
+      background: var(--bg-obsidian);
+      padding: 5px 10px;
+      min-width: 220px;
+    }
+    .search-box input {
+      background: transparent;
+      border: none;
+      color: var(--ink-100);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      width: 100%;
+      outline: none;
+    }
+    .search-box input::placeholder {
+      color: var(--ink-34);
+    }
+
+    /* Tab Panels */
+    .tab-panel {
+      display: none;
+      animation: panel-fade 0.32s var(--ease-expo-out) both;
+    }
+    .tab-panel.active {
+      display: block;
+    }
+    @keyframes panel-fade {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Architectural Data Tables */
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table.intel-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 13px;
+    }
+
+    table.intel-table thead th {
+      padding: 11px 16px;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--ink-54);
+      border-bottom: 1px solid var(--hairline);
+      background: rgba(16, 18, 22, 0.72);
+      white-space: nowrap;
+    }
+
+    table.intel-table tbody tr {
+      border-bottom: 1px solid var(--hairline);
+      transition: background-color 0.16s var(--ease-crisp);
+      cursor: pointer;
+    }
+    table.intel-table tbody tr:hover,
+    table.intel-table tbody tr.selected-row {
+      background: var(--bg-cell-hover);
+    }
+
+    table.intel-table td {
+      padding: 13px 16px;
+      vertical-align: middle;
+    }
+
+    .num-right {
+      text-align: right;
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .pos-val {
+      color: var(--pos-dark);
+      font-weight: 500;
+    }
+    .neg-val {
+      color: var(--neg-dark);
+      font-weight: 500;
+    }
+    .neutral-val {
+      color: var(--neutral-ink);
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 7px;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: 1px solid var(--hairline-strong);
+      color: var(--ink-76);
+      white-space: nowrap;
+    }
+    .badge-pos {
+      border-color: var(--pos-dark-border);
+      background: var(--pos-dark-bg);
+      color: var(--pos-dark);
+    }
+
+    .contract-title {
+      font-weight: 500;
+      color: var(--ink-100);
+      line-height: 1.35;
+      max-width: 390px;
+    }
+    .contract-legs {
+      margin-top: 3px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--ink-54);
+    }
+
+    /* Interactive Carry Yield Calculator Strip */
+    .calc-bar {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 20px;
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--hairline);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.024), rgba(255, 255, 255, 0)), #0F1115;
+    }
+    @media (max-width: 820px) {
+      .calc-bar { grid-template-columns: 1fr; }
+    }
+
+    .calc-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .calc-input-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .notional-input-wrap {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--hairline-strong);
+      background: var(--bg-obsidian);
+      padding: 5px 10px;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+    }
+    .notional-input-wrap span {
+      color: var(--ink-54);
+      margin-right: 4px;
+    }
+    .notional-input-wrap input {
+      width: 96px;
+      background: transparent;
+      border: none;
+      color: var(--ink-100);
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+      font-size: 12.5px;
+      outline: none;
+    }
+
+    .calc-outputs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--hairline-strong);
+      background: var(--bg-obsidian);
+    }
+    .calc-out-cell {
+      padding: 10px 12px;
+      border-right: 1px solid var(--hairline);
+    }
+    .calc-out-cell:last-child { border-right: none; }
+    .calc-out-lbl {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-54);
+    }
+    .calc-out-val {
+      margin-top: 4px;
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+      font-size: 16.5px;
+      font-weight: 600;
+      color: var(--pos-dark);
+    }
+
+    /* Major Benchmarks Footer Row inside Perp Tab */
+    .benchmarks-strip {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      border-top: 1px solid var(--hairline);
+      background: rgba(16, 18, 22, 0.5);
+    }
+    @media (max-width: 900px) {
+      .benchmarks-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (max-width: 520px) {
+      .benchmarks-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    .bm-cell {
+      padding: 12px 14px;
+      border-right: 1px solid var(--hairline);
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+    }
+    .bm-cell:last-child { border-right: none; }
+    .bm-sym {
+      font-weight: 600;
+      color: var(--ink-100);
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    .bm-rates {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: 10.5px;
+      color: var(--ink-54);
+    }
+
+    /* B2B Shopify Tab Layout */
+    .shopify-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      border-bottom: 1px solid var(--hairline);
+    }
+    @media (max-width: 860px) {
+      .shopify-grid { grid-template-columns: 1fr; }
+    }
+    .shopify-col {
+      padding: 20px;
+      border-right: 1px solid var(--hairline);
+    }
+    .shopify-col:last-child { border-right: none; }
+
+    .sig-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+    .sig-chip {
+      padding: 4px 8px;
+      border: 1px solid var(--hairline-strong);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--ink-76);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Code / MCP Block */
+    .code-pane {
+      position: relative;
+      background: #08090B;
+      border: 1px solid var(--hairline);
+      padding: 16px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.55;
+      color: #E5E2DA;
+      overflow-x: auto;
+    }
+    .code-pane pre {
+      margin: 0;
+      font-family: inherit;
+    }
+
+    /* Bottom Conversion Banner Inside Main Matrix */
+    .matrix-cta-bar {
+      margin-top: auto;
+      padding: 16px 20px;
+      background: #111419;
+      border-top: 1px solid var(--hairline);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    /* RIGHT RAIL: Warm Archival Paper (#F3EFE6) Execution & API Slip (Dramatic Material Polarity!) */
+    aside.paper-slip {
+      background: var(--paper-bg);
+      color: var(--paper-ink);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .slip-section {
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--paper-hairline);
+    }
+    .slip-section:last-child {
+      border-bottom: none;
+    }
+
+    .slip-eyebrow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--paper-muted);
+      margin-bottom: 10px;
+    }
+
+    .slip-heading {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -0.02em;
+      color: var(--paper-ink);
+      margin-bottom: 8px;
+    }
+
+    .slip-desc {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--paper-muted);
+      margin-bottom: 14px;
+    }
+
+    .slip-kv-list {
+      border-top: 1px solid var(--paper-hairline);
+      margin-bottom: 16px;
+    }
+    .slip-kv {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--paper-hairline);
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+    }
+    .slip-kv span:first-child {
+      color: var(--paper-muted);
+    }
+    .slip-kv span:last-child {
+      font-weight: 600;
+      text-align: right;
+    }
+    .paper-pos { color: var(--pos-light); }
+    .paper-neg { color: var(--neg-light); }
+
+    .actor-directory {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .actor-row {
+      display: block;
+      padding: 11px 12px;
+      background: var(--paper-well);
+      border: 1px solid var(--paper-hairline);
+      transition: border-color 0.2s var(--ease-crisp), transform 0.2s var(--ease-crisp);
+    }
+    .actor-row:hover {
+      border-color: var(--paper-ink);
+      transform: translateX(2px);
+    }
+    .actor-row-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--paper-muted);
+      margin-bottom: 3px;
+    }
+    .actor-live-tag {
+      color: var(--pos-light);
+      font-weight: 600;
+    }
+    .actor-row-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--paper-ink);
+      line-height: 1.3;
+    }
+
+    /* Architectural Node Diagram Section Below Cockpit */
+    .architecture-band {
+      border-left: 1px solid var(--hairline);
+      border-right: 1px solid var(--hairline);
+      border-bottom: 1px solid var(--hairline);
+      padding: 36px 28px;
+      background: rgba(16, 18, 22, 0.38);
+    }
+
+    .arch-nodes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 22px;
+    }
+    @media (max-width: 860px) {
+      .arch-nodes { grid-template-columns: 1fr; }
+    }
+
+    .arch-node {
+      border: 1px solid rgba(245, 242, 235, 0.24);
+      padding: 20px;
+      background: var(--bg-obsidian);
+      position: relative;
+    }
+    .arch-node-num {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--ink-54);
+      margin-bottom: 8px;
+    }
+    .arch-node h3 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+      color: var(--ink-100);
+    }
+    .arch-node p {
+      font-size: 13.5px;
+      color: var(--ink-54);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      padding: 26px 0 40px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--ink-54);
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .footer-links a:hover {
+      color: var(--ink-100);
+      text-decoration: underline;
+    }
+
+    /* Toast Notification */
+    .toast-pill {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translate3d(-50%, 24px, 0);
+      opacity: 0;
+      pointer-events: none;
+      z-index: 90;
+      padding: 9px 16px;
+      background: var(--paper-bg);
+      color: var(--paper-ink);
+      border: 1px solid var(--paper-ink);
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+      transition: opacity 0.35s var(--ease-expo-out), transform 0.35s var(--ease-expo-out);
+    }
+    .toast-pill.visible {
+      opacity: 1;
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Subtle 35mm Film Grain -->
+  <svg class="film-grain" width="100%" height="100%" aria-hidden="true">
+    <filter id="grain-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain-filter)" />
+  </svg>
+
+  <!-- Architectural Hairline Grid Guides -->
+  <div class="arch-grid-backdrop" aria-hidden="true"></div>
+
+  <!-- Sticky Technical Masthead -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 13L6.5 8.5L9.5 11.5L14 4" />
+            <path d="M10.5 4H14V7.5" />
+          </svg>
+        </div>
+        <span class="brand-title">QUANT // B2B INTEL</span>
+        <span class="brand-sub">PUBLIC TELEMETRY &amp; MCP FUNNEL</span>
+      </div>
+
+      <nav class="top-nav" aria-label="Primary sections">
+        <button type="button" class="nav-jump" data-switch-tab="prediction"><span>01.</span>PREDICTION_ARB</button>
+        <button type="button" class="nav-jump" data-switch-tab="funding"><span>02.</span>PERP_CARRY</button>
+        <button type="button" class="nav-jump" data-switch-tab="shopify"><span>03.</span>SHOPIFY_LEADS</button>
+        <button type="button" class="nav-jump" data-switch-tab="mcp"><span>04.</span>MCP_SDK</button>
+      </nav>
+
+      <div class="masthead-right">
+        <div class="status-chip" title="Refreshed hourly via public GitHub Actions">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span id="nav-sync-label">LIVE · HOURLY CRON</span>
+        </div>
+        <button type="button" class="btn-wipe btn-outline-dark" id="masthead-copy-mcp">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <rect x="5" y="5" width="9" height="9" />
+            <path d="M3 11H2V2H11V3" />
+          </svg>
+          <span>Copy MCP Config</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <!-- Compact Prestige Cover Strip -->
+    <section class="cover-strip">
+      <div class="cover-grid">
+        <div>
+          <div class="eyebrow-row">
+            <span class="eyebrow-tag">ZERO-AUTH PUBLIC FEED</span>
+            <span>POLYMARKET · KALSHI · HYPERLIQUID · KRAKEN · DYDX V4</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="hl-mask"><span class="hl-line" style="--delay:0.06s">Cross-venue <em>arbitrage</em>,</span></span>
+            <span class="hl-mask"><span class="hl-line" style="--delay:0.17s">perp <em>carry yields</em> &amp; B2B APIs.</span></span>
+          </h1>
+        </div>
+
+        <div>
+          <p class="hero-lede">
+            Live hourly preview ingested from five public institutional venues. Connect AI Agents via our open-source <strong>MCP Server</strong> or execute full 3,400+ market L2 orderbook &amp; lead enrichment runs on <strong>Apify Cloud</strong>.
+          </p>
+          <div class="hero-cta-row">
+            <a href="https://apify.com/conscious_chuckwalla/prediction-market-arb-intel" target="_blank" rel="noopener" class="btn-wipe btn-ivory">
+              <span>Run Full 3,400+ Market L2 Feed on Apify</span>
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M4 12L12 4M6 4H12V10" />
+              </svg>
+            </a>
+            <button type="button" class="btn-wipe btn-outline-dark" data-switch-tab="mcp">
+              <span>Connect Claude / Cursor MCP</span>
+            </button>
+            <a href="https://github.com/zk16k123-svg/quant-b2b-intel-hub" target="_blank" rel="noopener" class="btn-wipe btn-outline-dark">
+              <span>GitHub Repo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Monumental Live Telemetry Strip -->
+    <section class="telemetry-strip" aria-label="Live market summary">
+      <span class="crosshair ch-tl" aria-hidden="true"></span>
+      <span class="crosshair ch-tr" aria-hidden="true"></span>
+      <div class="kpi-cell">
+        <span class="kpi-label">01 // LIVE MARKETS INGESTED</span>
+        <span class="kpi-num tabular" id="kpi-total-markets">4,041</span>
+        <span class="kpi-foot" id="kpi-venues-breakdown">3,609 Prediction · 432 Perp Contracts</span>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">02 // PEAK PERP CARRY NET APR</span>
+        <span class="kpi-num positive tabular" id="kpi-peak-apr">+103.82%</span>
+        <span class="kpi-foot" id="kpi-peak-apr-pair">Delta-neutral after 0.85% exec drag</span>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">03 // PEAK PREDICTION SPREAD</span>
+        <span class="kpi-num positive tabular" id="kpi-peak-bps">+1,050 bps</span>
+        <span class="kpi-foot">Polymarket × Kalshi &amp; NegRisk CLOB</span>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">04 // SNAPSHOT TIMESTAMP (UTC)</span>
+        <span class="kpi-num tabular" id="kpi-updated-clock" style="font-size: clamp(1.25rem, 1.9vw, 1.7rem);">17:53 UTC</span>
+        <span class="kpi-foot" id="kpi-updated-date">2026-11-24 · GitHub Actions Cron</span>
+      </div>
+    </section>
+
+    <!-- Primary Asymmetric Terminal Cockpit -->
+    <section class="cockpit-frame" aria-label="Interactive intelligence terminal">
+      <span class="crosshair ch-bl" aria-hidden="true"></span>
+      <span class="crosshair ch-br" aria-hidden="true"></span>
+
+      <!-- LEFT 8-COL OBSIDIAN MATRIX -->
+      <div class="workspace-main">
+        <div class="tab-bar-wrap">
+          <div class="tab-bar" role="tablist" aria-label="Intelligence streams" id="main-tablist">
+            <button type="button" role="tab" class="tab-btn" id="tab-prediction" aria-selected="true" aria-controls="panel-prediction" data-tab="prediction">
+              <span class="tab-idx">01</span>
+              <span>Prediction Market Arbitrage</span>
+            </button>
+            <button type="button" role="tab" class="tab-btn" id="tab-funding" aria-selected="false" aria-controls="panel-funding" data-tab="funding">
+              <span class="tab-idx">02</span>
+              <span>Perp Funding Carry Yields</span>
+            </button>
+            <button type="button" role="tab" class="tab-btn" id="tab-shopify" aria-selected="false" aria-controls="panel-shopify" data-tab="shopify">
+              <span class="tab-idx">03</span>
+              <span>B2B Shopify Lead Intel</span>
+            </button>
+            <button type="button" role="tab" class="tab-btn" id="tab-mcp" aria-selected="false" aria-controls="panel-mcp" data-tab="mcp">
+              <span class="tab-idx">04</span>
+              <span>MCP &amp; Python SDK</span>
+            </button>
+            <div class="tab-indicator" id="tab-indicator" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- PANEL 1: PREDICTION MARKET ARBITRAGE -->
+        <div class="tab-panel active" id="panel-prediction" role="tabpanel" aria-labelledby="tab-prediction">
+          <div class="sub-toolbar">
+            <div class="seg-group" role="group" aria-label="Prediction view mode">
+              <button type="button" class="seg-btn active" data-pred-view="spreads">Arbitrage &amp; Mispricings (8)</button>
+              <button type="button" class="seg-btn" data-pred-view="contracts">Top Volume Contracts (8)</button>
+            </div>
+            <label class="search-box" aria-label="Filter prediction contracts">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="7" cy="7" r="4.8" />
+                <path d="M10.8 10.8L14 14" />
+              </svg>
+              <input type="search" id="pred-search" placeholder="Filter Fed, 2028, NBA, UCL..." />
+            </label>
+          </div>
+
+          <div class="table-scroll">
+            <table class="intel-table" id="pred-spreads-table">
+              <thead>
+                <tr>
+                  <th>Signal / Venue</th>
+                  <th>Event &amp; Executable Legs</th>
+                  <th class="num-right">Implied / Σ</th>
+                  <th class="num-right">Edge / Div</th>
+                  <th class="num-right">24h Vol</th>
+                  <th class="num-right">Expiry</th>
+                </tr>
+              </thead>
+              <tbody id="pred-spreads-tbody"></tbody>
+            </table>
+
+            <table class="intel-table" id="pred-contracts-table" style="display:none;">
+              <thead>
+                <tr>
+                  <th>Venue</th>
+                  <th>Contract &amp; Outcome</th>
+                  <th class="num-right">YES Bid / Ask</th>
+                  <th class="num-right">NO Ask</th>
+                  <th class="num-right">Spread</th>
+                  <th class="num-right">24h Vol</th>
+                </tr>
+              </thead>
+              <tbody id="pred-contracts-tbody"></tbody>
+            </table>
+          </div>
+
+          <div class="matrix-cta-bar">
+            <div class="tabular" style="font-size:12px; color:var(--ink-76);">
+              Showing top 8 preview rows from <strong id="pred-count-inline">3,609</strong> scanned contracts. Need live L2 CLOB depth &amp; $1,000 VWAP fill slippage?
+            </div>
+            <a href="https://apify.com/conscious_chuckwalla/prediction-market-arb-intel" target="_blank" rel="noopener" class="btn-wipe btn-ivory">
+              <span>Run Full 3,400+ Market L2 Feed on Apify</span>
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M4 12L12 4M6 4H12V10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PANEL 2: PERP FUNDING CARRY YIELDS -->
+        <div class="tab-panel" id="panel-funding" role="tabpanel" aria-labelledby="tab-funding">
+          <div class="calc-bar">
+            <div class="calc-controls">
+              <div class="kpi-label">DELTA-NEUTRAL CARRY YIELD SIZER · <span id="calc-selected-sym" style="color:var(--ink-100);">APE (HYPERLIQUID × KRAKEN)</span></div>
+              <div class="calc-input-row">
+                <div class="seg-group" role="group" aria-label="Preset notional capital">
+                  <button type="button" class="seg-btn active" data-notional="10000">$10k</button>
+                  <button type="button" class="seg-btn" data-notional="50000">$50k</button>
+                  <button type="button" class="seg-btn" data-notional="100000">$100k</button>
+                  <button type="button" class="seg-btn" data-notional="250000">$250k</button>
+                </div>
+                <label class="notional-input-wrap" aria-label="Custom USD notional">
+                  <span>USD</span>
+                  <input type="number" id="custom-notional" value="10000" min="100" step="1000" />
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-outputs">
+              <div class="calc-out-cell">
+                <div class="calc-out-lbl">Est. Daily</div>
+                <div class="calc-out-val" id="calc-daily-usd">+$28.44</div>
+              </div>
+              <div class="calc-out-cell">
+                <div class="calc-out-lbl">Est. 30-Day</div>
+                <div class="calc-out-val" id="calc-monthly-usd">+$853.32</div>
+              </div>
+              <div class="calc-out-cell">
+                <div class="calc-out-lbl">Est. Annual</div>
+                <div class="calc-out-val" id="calc-annual-usd">+$10,382</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-scroll">
+            <table class="intel-table">
+              <thead>
+                <tr>
+                  <th>Asset</th>
+                  <th>Short Leg (Receive)</th>
+                  <th>Long Leg (Hedge)</th>
+                  <th class="num-right">Short APR</th>
+                  <th class="num-right">Long APR</th>
+                  <th class="num-right">Net Carry APR</th>
+                  <th class="num-right">Min Leg OI</th>
+                  <th class="num-right" id="th-notional-col">Yield / $10k</th>
+                </tr>
+              </thead>
+              <tbody id="perp-carry-tbody"></tbody>
+            </table>
+          </div>
+
+          <div class="benchmarks-strip" id="perp-benchmarks-strip" aria-label="Major asset funding rate benchmarks"></div>
+
+          <div class="matrix-cta-bar">
+            <div class="tabular" style="font-size:12px; color:var(--ink-76);">
+              Previewing top 10 pairs (`OI &gt; $75k`). Unlock 650+ perpetuals, 7d/30d realized funding stability &amp; automated alerts on Apify Cloud.
+            </div>
+            <a href="https://apify.com/conscious_chuckwalla/crypto-funding-rate-carry-arb" target="_blank" rel="noopener" class="btn-wipe btn-ivory">
+              <span>Try Full Perp Carry Engine on Apify Cloud</span>
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M4 12L12 4M6 4H12V10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PANEL 3: B2B SHOPIFY LEAD INTEL -->
+        <div class="tab-panel" id="panel-shopify" role="tabpanel" aria-labelledby="tab-shopify">
+          <div class="table-scroll">
+            <table class="intel-table">
+              <thead>
+                <tr>
+                  <th>High-Converting DTC Segment</th>
+                  <th>Detected Tech Stack &amp; Pixel Filter</th>
+                  <th class="num-right">Median AOV</th>
+                  <th class="num-right">Verified Email Hit</th>
+                  <th>Outbound Playbook</th>
+                </tr>
+              </thead>
+              <tbody id="shopify-segments-tbody"></tbody>
+            </table>
+          </div>
+
+          <div class="shopify-grid">
+            <div class="shopify-col">
+              <div class="kpi-label">46 DETECTED E-COMMERCE &amp; AD-TECH SIGNATURES</div>
+              <p style="font-size:13px; color:var(--ink-54); margin-top:6px;">
+                Filter millions of Shopify &amp; Shopify Plus storefronts by installed ESP, SMS, subscription billing, attribution pixel, BNPL, and helpdesk stack:
+              </p>
+              <div class="sig-cloud">
+                <span class="sig-chip">Shopify Plus</span>
+                <span class="sig-chip">Klaviyo</span>
+                <span class="sig-chip">Attentive SMS</span>
+                <span class="sig-chip">Postscript</span>
+                <span class="sig-chip">Recharge</span>
+                <span class="sig-chip">Skio</span>
+                <span class="sig-chip">Gorgias</span>
+                <span class="sig-chip">Zendesk</span>
+                <span class="sig-chip">Triple Whale</span>
+                <span class="sig-chip">Northbeam</span>
+                <span class="sig-chip">Meta Pixel</span>
+                <span class="sig-chip">TikTok Pixel</span>
+                <span class="sig-chip">Google Ads Tag</span>
+                <span class="sig-chip">Pinterest Tag</span>
+                <span class="sig-chip">Okendo</span>
+                <span class="sig-chip">Yotpo</span>
+                <span class="sig-chip">Judge.me</span>
+                <span class="sig-chip">Loop Returns</span>
+                <span class="sig-chip">Affirm / Klarna</span>
+                <span class="sig-chip">Elevar GTM</span>
+              </div>
+            </div>
+
+            <div class="shopify-col">
+              <div class="kpi-label" style="margin-bottom:8px;">SAMPLE ENRICHED STORE RECORD (JSON)</div>
+              <div class="code-pane">
+<pre>{
+  "domain": "lumina-botanicals.com",
+  "shopify_tier": "Shopify Plus",
+  "verified_emails": ["partnerships@lumina-botanicals.com"],
+  "socials": { "instagram": "@luminabotanicals", "tiktok": "@luminaskin" },
+  "tech_stack": ["Klaviyo", "Recharge", "Gorgias", "Meta Pixel", "TikTok Pixel"],
+  "active_sku_count": 48,
+  "median_price_usd": 64.00,
+  "est_gmv_band": "$5M-$15M"
+}</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="matrix-cta-bar">
+            <div class="tabular" style="font-size:12px; color:var(--ink-76);">
+              Export verified merchant emails, social handles &amp; tech stack matrices directly to CSV, JSON, Clay, HubSpot, or AI SDR agents.
+            </div>
+            <a href="https://apify.com/conscious_chuckwalla/shopify-leads-tech-stack-intel" target="_blank" rel="noopener" class="btn-wipe btn-ivory">
+              <span>Launch Shopify Leads Enricher on Apify</span>
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M4 12L12 4M6 4H12V10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PANEL 4: MCP & PYTHON SDK -->
+        <div class="tab-panel" id="panel-mcp" role="tabpanel" aria-labelledby="tab-mcp">
+          <div class="sub-toolbar">
+            <div class="seg-group" role="group" aria-label="Code snippet selector">
+              <button type="button" class="seg-btn active" data-snippet="mcp">Claude / Cursor MCP Config</button>
+              <button type="button" class="seg-btn" data-snippet="python">Python Sync API</button>
+              <button type="button" class="seg-btn" data-snippet="curl">cURL REST Endpoint</button>
+            </div>
+            <button type="button" class="btn-wipe btn-ivory" id="copy-active-snippet">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <rect x="5" y="5" width="9" height="9" />
+                <path d="M3 11H2V2H11V3" />
+              </svg>
+              <span>Copy Snippet</span>
+            </button>
+          </div>
+
+          <div style="padding:20px;">
+            <div class="code-pane">
+              <pre id="sdk-code-display"></pre>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin-top:16px;">
+              <div style="border:1px solid var(--hairline); padding:14px;">
+                <div class="kpi-label" style="margin-bottom:4px;">STEP 01 // ZERO-INSTALL UVX</div>
+                <p style="font-size:12.5px; color:var(--ink-76);">Paste the MCP JSON into <code class="tabular">claude_desktop_config.json</code> or <code class="tabular">.cursor/mcp.json</code>. Works immediately in preview mode even before adding a token.</p>
+              </div>
+              <div style="border:1px solid var(--hairline); padding:14px;">
+                <div class="kpi-label" style="margin-bottom:4px;">STEP 02 // ADD APIFY_TOKEN</div>
+                <p style="font-size:12.5px; color:var(--ink-76);">Grab a free API token on Apify Console to unlock full 3,400+ market L2 orderbooks, 650+ perp carry pairs, and live Shopify store enrichment.</p>
+              </div>
+              <div style="border:1px solid var(--hairline); padding:14px;">
+                <div class="kpi-label" style="margin-bottom:4px;">STEP 03 // 4 AGENT TOOLS</div>
+                <p style="font-size:12.5px; color:var(--ink-76);">Exposes <code class="tabular">scan_prediction_market_arbitrage</code>, <code class="tabular">scan_crypto_funding_carry</code>, <code class="tabular">enrich_shopify_b2b_leads</code> &amp; <code class="tabular">get_live_terminal_summary</code>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="matrix-cta-bar">
+            <div class="tabular" style="font-size:12px; color:var(--ink-76);">
+              Includes free monthly Apify Cloud platform credits on signup — zero credit card required to test.
+            </div>
+            <a href="https://apify.com/conscious_chuckwalla/prediction-market-arb-intel" target="_blank" rel="noopener" class="btn-wipe btn-ivory">
+              <span>Try Free on Apify Cloud</span>
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M4 12L12 4M6 4H12V10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT 4-COL WARM ARCHIVAL PAPER (#F3EFE6) EXECUTION & CLOUD SLIP -->
+      <aside class="paper-slip" aria-label="Execution ticket and Apify Cloud directory">
+        <div class="slip-section">
+          <div class="slip-eyebrow">
+            <span>EXECUTION &amp; API TICKET</span>
+            <span id="slip-ticket-badge" class="paper-pos">● LIVE SIGNAL</span>
+          </div>
+          <h2 class="slip-heading" id="slip-title">Polymarket × Kalshi Arbitrage</h2>
+          <p class="slip-desc" id="slip-desc">
+            Click any live contract or carry pair in the matrix to inspect execution parameters, or trigger an on-demand full-depth scan via Apify Cloud.
+          </p>
+
+          <div class="slip-kv-list" id="slip-kv-container">
+            <div class="slip-kv"><span>Primary Strategy</span><span id="kv-1">Cross-Venue &amp; NegRisk</span></div>
+            <div class="slip-kv"><span>Peak Live Edge</span><span id="kv-2" class="paper-pos">+1,050.0 bps</span></div>
+            <div class="slip-kv"><span>Full Cloud Coverage</span><span id="kv-3">3,400+ L2 Markets</span></div>
+            <div class="slip-kv"><span>Orderbook Slippage</span><span id="kv-4">$1,000 VWAP Depth</span></div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <a id="slip-primary-cta" href="https://apify.com/conscious_chuckwalla/prediction-market-arb-intel" target="_blank" rel="noopener" class="btn-wipe btn-obsidian" style="width:100%;">
+              <span id="slip-primary-cta-label">Try Free on Apify Cloud</span>
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M4 12L12 4M6 4H12V10" />
+              </svg>
+            </a>
+            <button type="button" class="btn-wipe btn-outline-paper" id="slip-copy-mcp" style="width:100%;">
+              <span>Copy MCP Server Config</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="slip-section">
+          <div class="slip-eyebrow">
+            <span>PRODUCTION APIFY STORE ACTORS</span>
+            <span>PAY-PER-EVENT</span>
+          </div>
+          <div class="actor-directory">
+            <a href="https://apify.com/conscious_chuckwalla/prediction-market-arb-intel" target="_blank" rel="noopener" class="actor-row">
+              <div class="actor-row-top">
+                <span>01 · PREDICTION INTEL</span>
+                <span class="actor-live-tag">LIVE →</span>
+              </div>
+              <div class="actor-row-title">Polymarket &amp; Kalshi Odds, Orderbook &amp; Arbitrage Intel</div>
+            </a>
+
+            <a href="https://apify.com/conscious_chuckwalla/crypto-funding-rate-carry-arb" target="_blank" rel="noopener" class="actor-row">
+              <div class="actor-row-top">
+                <span>02 · PERP CARRY ARB</span>
+                <span class="actor-live-tag">LIVE →</span>
+              </div>
+              <div class="actor-row-title">Crypto Perp Funding Rate, OI &amp; Delta-Neutral Carry Arbitrage</div>
+            </a>
+
+            <a href="https://apify.com/conscious_chuckwalla/shopify-leads-tech-stack-intel" target="_blank" rel="noopener" class="actor-row">
+              <div class="actor-row-top">
+                <span>03 · B2B LEAD ENRICHER</span>
+                <span class="actor-live-tag">LIVE →</span>
+              </div>
+              <div class="actor-row-title">Shopify Store Leads, Emails, Socials &amp; Tech Stack Enricher</div>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Diagrammatic 3-Node Pipeline Architecture -->
+    <section class="architecture-band" aria-label="API and MCP pipeline architecture">
+      <div class="kpi-label">SYSTEM ARCHITECTURE // ZERO-FRICTION DATA PIPELINE FOR QUANTS &amp; AI AGENTS</div>
+      <div class="arch-nodes">
+        <div class="arch-node">
+          <div class="arch-node-num">NODE 01 // HOURLY PUBLIC RADAR</div>
+          <h3>Automated Multi-Venue Ingestion</h3>
+          <p>Public GitHub Actions cron (<code class="tabular">12 * * * *</code>) polls Polymarket Gamma, Kalshi v2, Hyperliquid, Kraken Futures, and dYdX v4 every hour using zero-dependency Python 3.11.</p>
+          <a href="./data/live_feed.json" target="_blank" rel="noopener" class="nav-jump" style="color:var(--ink-100);">Inspect Raw JSON Feed →</a>
+        </div>
+
+        <div class="arch-node">
+          <div class="arch-node-num">NODE 02 // AI-AGENT MCP BRIDGE</div>
+          <h3>Native Claude, Cursor &amp; Windsurf Tools</h3>
+          <p>Drop <code class="tabular">quant-b2b-intel-mcp</code> into any MCP host. Queries public preview snapshots with zero setup, and upgrades automatically to synchronous cloud execution when <code class="tabular">APIFY_TOKEN</code> is present.</p>
+          <button type="button" class="nav-jump" data-switch-tab="mcp" style="color:var(--ink-100);">View MCP JSON Config →</button>
+        </div>
+
+        <div class="arch-node">
+          <div class="arch-node-num">NODE 03 // FULL-DEPTH APIFY EXECUTION</div>
+          <h3>Institutional L2 Books &amp; Lead Scale</h3>
+          <p>Execute synchronous REST calls (<code class="tabular">run-sync-get-dataset-items</code>) across 3,400+ prediction contracts with $1k VWAP slippage, 650+ perpetual markets, and verified Shopify store contacts.</p>
+          <a href="https://apify.com/conscious_chuckwalla" target="_blank" rel="noopener" class="nav-jump" style="color:var(--ink-100);">Open Apify Publisher Profile →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>QUANT // B2B INTEL HUB · Refreshed 24/7 via GitHub Actions · Strictly quantitative &amp; informational telemetry (not financial advice).</div>
+        <div class="footer-links">
+          <a href="https://apify.com/conscious_chuckwalla/prediction-market-arb-intel" target="_blank" rel="noopener">Prediction Arbitrage API</a>
+          <a href="https://apify.com/conscious_chuckwalla/crypto-funding-rate-carry-arb" target="_blank" rel="noopener">Perp Funding Carry API</a>
+          <a href="https://apify.com/conscious_chuckwalla/shopify-leads-tech-stack-intel" target="_blank" rel="noopener">Shopify Leads API</a>
+          <a href="https://github.com/zk16k123-svg/quant-b2b-intel-hub" target="_blank" rel="noopener">GitHub &amp; MCP Server</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="toast-pill" id="toast" role="status" aria-live="polite">Copied to clipboard</div>
+
+  <!-- Embedded Real Live Market Snapshot Fallback (enables offline / file:// zero-CORS rendering) -->
+  <script id="fallback-live-feed" type="application/json">{"schema_version":"1.0.0","updated_at_utc":"2026-11-24T17:53:08Z","refresh_cadence":"Hourly (GitHub Actions Public Cron `12 * * * *`)","summary":{"total_live_markets_ingested":4041,"prediction_contracts_scanned":3609,"perp_contracts_scanned":432,"peak_perp_carry_net_apr_pct":103.82,"peak_prediction_edge_bps":1050.0},"apify_actors":{"prediction_market_arb":{"actor_id":"conscious_chuckwalla/prediction-market-arb-intel","api_slug":"conscious_chuckwalla~prediction-market-arb-intel","title":"Polymarket & Kalshi Odds, Orderbook & Arbitrage Intel","store_url":"https://apify.com/conscious_chuckwalla/prediction-market-arb-intel","api_run_sync_url":"https://api.apify.com/v2/acts/conscious_chuckwalla~prediction-market-arb-intel/run-sync-get-dataset-items","status":"LIVE","full_scope":"3,400+ active contracts, L2 CLOB orderbook depth, $1,000 VWAP slippage & cross-venue arbitrage"},"crypto_funding_carry":{"actor_id":"conscious_chuckwalla/crypto-funding-rate-carry-arb","api_slug":"conscious_chuckwalla~crypto-funding-rate-carry-arb","title":"Crypto Perp Funding Rate, OI & Delta-Neutral Carry Arbitrage","store_url":"https://apify.com/conscious_chuckwalla/crypto-funding-rate-carry-arb","api_run_sync_url":"https://api.apify.com/v2/acts/conscious_chuckwalla~crypto-funding-rate-carry-arb/run-sync-get-dataset-items","status":"LIVE","full_scope":"650+ perpetual markets across CEX & PerpDEX venues, 7d/30d realized funding stability & OI-weighted carry"},"shopify_leads_intel":{"actor_id":"conscious_chuckwalla/shopify-leads-tech-stack-intel","api_slug":"conscious_chuckwalla~shopify-leads-tech-stack-intel","title":"Shopify Store Leads, Emails, Socials & Tech Stack Enricher","store_url":"https://apify.com/conscious_chuckwalla/shopify-leads-tech-stack-intel","api_run_sync_url":"https://api.apify.com/v2/acts/conscious_chuckwalla~shopify-leads-tech-stack-intel/run-sync-get-dataset-items","status":"LIVE","full_scope":"Verified merchant contacts, social handles, 40+ detected SaaS/pixel signatures, SKU catalog & AOV tiers"}},"prediction_markets":{"polymarket_contracts_scanned":2852,"kalshi_contracts_scanned":757,"total_contracts_scanned":3609,"top_contracts":[{"venue":"Kalshi","event_id":"KXFEDDECISION-26DEC","event_title":"Fed decision in Dec 2026?","ticker":"KXFEDDECISION-26DEC-H0","question":"Fed decision in Dec 2026? \u2014 Fed maintains rate","outcome_label":"Fed maintains rate","category":"Macro & Rates","yes_bid":0.04,"yes_ask":0.05,"yes_mid":0.045,"no_bid":0.95,"no_ask":0.96,"spread_bps":100.0,"volume_24h_usd":832332.47,"liquidity_usd":5266137.07,"days_to_expiry":15.0,"neg_risk":true,"url":"https://kalshi.com/markets/kxfeddecision"},{"venue":"Polymarket","event_id":"1326248","event_title":"Galatasaray SK vs. Aston Villa FC","ticker":"ucl-gal-ast-2026-11-24-ast","question":"Will Aston Villa FC win on 2026-11-24?","outcome_label":"Aston Villa FC","category":"Sports","yes_bid":0.49,"yes_ask":0.5,"yes_mid":0.495,"no_bid":0.5,"no_ask":0.51,"spread_bps":100.0,"volume_24h_usd":801370.91,"liquidity_usd":116239.24,"days_to_expiry":0.0,"neg_risk":true,"url":"https://polymarket.com/event/ucl-gal-ast-2026-11-24"},{"venue":"Polymarket","event_id":"1436632","event_title":"Yokohama: Jie Cui vs Benjamin Hassan","ticker":"atp-cui-hassan-2026-11-22","question":"Yokohama: Jie Cui vs Benjamin Hassan","outcome_label":"Yokohama: Jie Cui vs Benjamin Hassan","category":"Sports","yes_bid":0.53,"yes_ask":0.55,"yes_mid":0.54,"no_bid":0.45,"no_ask":0.47,"spread_bps":200.0,"volume_24h_usd":704797.71,"liquidity_usd":32840.52,"days_to_expiry":5.3,"neg_risk":false,"url":"https://polymarket.com/event/atp-cui-hassan-2026-11-22"},{"venue":"Polymarket","event_id":"770450","event_title":"Fed Decision in December?","ticker":"will-there-be-no-change-in-fed-interest-ra","question":"Will there be no change in Fed interest rates after the December 2026 meeting?","outcome_label":"No change","category":"Macro & Rates","yes_bid":0.04,"yes_ask":0.043,"yes_mid":0.0415,"no_bid":0.957,"no_ask":0.96,"spread_bps":30.0,"volume_24h_usd":653219.5,"liquidity_usd":415154.97,"days_to_expiry":15.3,"neg_risk":true,"url":"https://polymarket.com/event/fed-decision-in-december-20260729232808632"},{"venue":"Polymarket","event_id":"1359781","event_title":"Miami (OH) vs. Western Michigan","ticker":"cfb-miaoh-wmich-2026-11-24","question":"Miami (OH) vs. Western Michigan","outcome_label":"Miami (OH) vs. Western Michigan","category":"Sports","yes_bid":0.32,"yes_ask":0.33,"yes_mid":0.325,"no_bid":0.67,"no_ask":0.68,"spread_bps":100.0,"volume_24h_usd":477972.45,"liquidity_usd":470338.36,"days_to_expiry":0.3,"neg_risk":false,"url":"https://polymarket.com/event/cfb-miaoh-wmich-2026-11-24"},{"venue":"Polymarket","event_id":"1436631","event_title":"Yokohama: Rio Noguchi vs Maximus Jones","ticker":"atp-noguchi-jon-2026-11-22","question":"Yokohama: Rio Noguchi vs Maximus Jones","outcome_label":"Yokohama: Rio Noguchi vs Maximus Jones","category":"Sports","yes_bid":0.923,"yes_ask":0.925,"yes_mid":0.924,"no_bid":0.075,"no_ask":0.077,"spread_bps":20.0,"volume_24h_usd":422320.71,"liquidity_usd":25115.92,"days_to_expiry":5.3,"neg_risk":false,"url":"https://polymarket.com/event/atp-noguchi-jon-2026-11-22"},{"venue":"Kalshi","event_id":"KXPRESNOMD-28","event_title":"2028 Democratic presidential nominee","ticker":"KXPRESNOMD-28-AOC","question":"2028 Democratic presidential nominee \u2014 Alexandria Ocasio-Cortez","outcome_label":"Alexandria Ocasio-Cortez","category":"Politics","yes_bid":0.16,"yes_ask":0.17,"yes_mid":0.165,"no_bid":0.83,"no_ask":0.84,"spread_bps":100.0,"volume_24h_usd":287467.12,"liquidity_usd":6042232.38,"days_to_expiry":713.9,"neg_risk":true,"url":"https://kalshi.com/markets/kxpresnomd"},{"venue":"Kalshi","event_id":"KXPRESNOMR-28","event_title":"2028 Republican presidential nominee","ticker":"KXPRESNOMR-28-JDV","question":"2028 Republican presidential nominee \u2014 J.D. Vance","outcome_label":"J.D. Vance","category":"Politics","yes_bid":0.31,"yes_ask":0.32,"yes_mid":0.315,"no_bid":0.68,"no_ask":0.69,"spread_bps":100.0,"volume_24h_usd":190970.28,"liquidity_usd":3625048.45,"days_to_expiry":713.9,"neg_risk":true,"url":"https://kalshi.com/markets/kxpresnomr"}],"top_spreads":[{"signal_type":"Cross-Venue Locked Arb","venues":"Polymarket \u00d7 Kalshi","title":"Will Ron DeSantis win the 2028 US Presidential Election?","category":"Politics","leg_a":"Polymarket YES @ 4.5\u00a2","leg_b":"Kalshi NO @ 85.0\u00a2 (YES 15.5\u00a2)","yes_prob_pct":4.5,"edge_bps":1050.0,"volume_24h_usd":39296.43,"days_to_expiry":714.5,"url":"https://polymarket.com/event/presidential-election-winner-2028"},{"signal_type":"Cross-Venue Locked Arb","venues":"Polymarket \u00d7 Kalshi","title":"Will Alexandria Ocasio-Cortez win the 2028 US Presidential Election?","category":"Politics","leg_a":"Polymarket YES @ 10.7\u00a2","leg_b":"Kalshi NO @ 84.0\u00a2 (YES 16.5\u00a2)","yes_prob_pct":10.7,"edge_bps":530.0,"volume_24h_usd":550137.34,"days_to_expiry":714.5,"url":"https://polymarket.com/event/presidential-election-winner-2028"},{"signal_type":"Cross-Venue Locked Arb","venues":"Polymarket \u00d7 Kalshi","title":"Will J.D. Vance win the 2028 Republican presidential nomination?","category":"Politics","leg_a":"Kalshi YES @ 32.0\u00a2","leg_b":"Polymarket NO @ 66.5\u00a2 (YES 33.6\u00a2)","yes_prob_pct":33.6,"edge_bps":150.0,"volume_24h_usd":259898.48,"days_to_expiry":714.5,"url":"https://polymarket.com/event/republican-presidential-nominee-2028"},{"signal_type":"Cross-Venue Odds Divergence","venues":"Polymarket \u00d7 Kalshi","title":"Will Josh Shapiro win the 2028 Democratic presidential nomination?","category":"Politics","leg_a":"Kalshi YES @ 4.9\u00a2","leg_b":"Polymarket NO @ 95.1\u00a2 (YES 5.3\u00a2)","yes_prob_pct":5.3,"edge_bps":45.0,"volume_24h_usd":473082.87,"days_to_expiry":714.5,"url":"https://polymarket.com/event/democratic-presidential-nominee-2028"},{"signal_type":"NegRisk Split/Mint Overround","venues":"Polymarket CLOB","title":"Next French Presidential Election","category":"Politics","leg_a":"Mint $1.00 USDC NegRisk full set","leg_b":"Hit 46 YES bids (\u03a3=$1.0230)","yes_prob_pct":102.3,"edge_bps":230.0,"volume_24h_usd":1051924.07,"days_to_expiry":145.4,"url":"https://polymarket.com/event/next-french-presidential-election"},{"signal_type":"NegRisk Split/Mint Overround","venues":"Polymarket CLOB","title":"PGL Major Singapore 2026: Winner","category":"CS2","leg_a":"Mint $1.00 USDC NegRisk full set","leg_b":"Hit 32 YES bids (\u03a3=$1.0205)","yes_prob_pct":102.05,"edge_bps":205.0,"volume_24h_usd":415409.14,"days_to_expiry":20.5,"url":"https://polymarket.com/event/pgl-major-singapore-2026-winner-1793811600000"},{"signal_type":"NegRisk Split/Mint Overround","venues":"Polymarket CLOB","title":"NBA: 2027 Champion","category":"Sports","leg_a":"Mint $1.00 USDC NegRisk full set","leg_b":"Hit 30 YES bids (\u03a3=$1.0090)","yes_prob_pct":100.9,"edge_bps":90.0,"volume_24h_usd":271481.7,"days_to_expiry":218.4,"url":"https://polymarket.com/event/nba-2027-champion"},{"signal_type":"NegRisk Split/Mint Overround","venues":"Polymarket CLOB","title":"Elon Musk # tweets November 17 - November 24, 2026?","category":"Culture","leg_a":"Mint $1.00 USDC NegRisk full set","leg_b":"Hit 17 YES bids (\u03a3=$1.0070)","yes_prob_pct":100.7,"edge_bps":70.0,"volume_24h_usd":625850.45,"days_to_expiry":0.0,"url":"https://polymarket.com/event/elon-musk-of-tweets-november-17-november-24-2026"}]},"perp_funding_carry":{"hyperliquid_markets_scanned":179,"kraken_markets_scanned":196,"dydx_markets_scanned":57,"total_perp_markets_scanned":432,"qualified_multi_venue_symbols":220,"fee_drag_assumption_apr_pct":0.85,"min_venue_oi_filter_usd":75000.0,"top_carry_spreads":[{"symbol":"APE","short_venue":"Hyperliquid","long_venue":"Kraken Futures","short_raw_symbol":"APE","long_raw_symbol":"PF_APEUSD","short_apr_pct":10.95,"long_apr_pct":-93.72,"gross_spread_apr_pct":104.67,"net_spread_apr_pct":103.82,"min_oi_usd":200426.97,"short_oi_usd":522539.31,"long_oi_usd":200426.97,"mark_price_usd":0.07025,"daily_yield_per_10k_usd":28.44,"annual_yield_per_10k_usd":10382.0},{"symbol":"COMP","short_venue":"Hyperliquid","long_venue":"Kraken Futures","short_raw_symbol":"COMP","long_raw_symbol":"PF_COMPUSD","short_apr_pct":10.95,"long_apr_pct":-78.69,"gross_spread_apr_pct":89.64,"net_spread_apr_pct":88.79,"min_oi_usd":215627.22,"short_oi_usd":534938.91,"long_oi_usd":215627.22,"mark_price_usd":17.352,"daily_yield_per_10k_usd":24.33,"annual_yield_per_10k_usd":8879.0},{"symbol":"MON","short_venue":"Kraken Futures","long_venue":"Hyperliquid","short_raw_symbol":"PF_MONUSD","long_raw_symbol":"MON","short_apr_pct":83.2,"long_apr_pct":10.95,"gross_spread_apr_pct":72.25,"net_spread_apr_pct":71.4,"min_oi_usd":152854.93,"short_oi_usd":152854.93,"long_oi_usd":26775485.8,"mark_price_usd":0.009949,"daily_yield_per_10k_usd":19.56,"annual_yield_per_10k_usd":7140.0},{"symbol":"JUP","short_venue":"Kraken Futures","long_venue":"Hyperliquid","short_raw_symbol":"PF_JUPUSD","long_raw_symbol":"JUP","short_apr_pct":-44.03,"long_apr_pct":-107.71,"gross_spread_apr_pct":63.68,"net_spread_apr_pct":62.83,"min_oi_usd":250187.91,"short_oi_usd":250187.91,"long_oi_usd":7088055.74,"mark_price_usd":0.225285,"daily_yield_per_10k_usd":17.21,"annual_yield_per_10k_usd":6283.0},{"symbol":"MORPHO","short_venue":"Kraken Futures","long_venue":"Hyperliquid","short_raw_symbol":"PF_MORPHOUSD","long_raw_symbol":"MORPHO","short_apr_pct":74.39,"long_apr_pct":10.95,"gross_spread_apr_pct":63.44,"net_spread_apr_pct":62.59,"min_oi_usd":121919.33,"short_oi_usd":121919.33,"long_oi_usd":3265844.44,"mark_price_usd":1.580699,"daily_yield_per_10k_usd":17.15,"annual_yield_per_10k_usd":6259.0},{"symbol":"ZEC","short_venue":"Kraken Futures","long_venue":"dYdX v4","short_raw_symbol":"PF_ZECUSD","long_raw_symbol":"ZEC-USD","short_apr_pct":57.05,"long_apr_pct":0.0,"gross_spread_apr_pct":57.05,"net_spread_apr_pct":56.2,"min_oi_usd":97060.64,"short_oi_usd":8323091.87,"long_oi_usd":97060.64,"mark_price_usd":714.201658,"daily_yield_per_10k_usd":15.4,"annual_yield_per_10k_usd":5620.0},{"symbol":"DASH","short_venue":"Kraken Futures","long_venue":"Hyperliquid","short_raw_symbol":"PF_DASHUSD","long_raw_symbol":"DASH","short_apr_pct":61.17,"long_apr_pct":10.95,"gross_spread_apr_pct":50.22,"net_spread_apr_pct":49.37,"min_oi_usd":739183.53,"short_oi_usd":739183.53,"long_oi_usd":1462537.68,"mark_price_usd":34.578126,"daily_yield_per_10k_usd":13.53,"annual_yield_per_10k_usd":4937.0},{"symbol":"BONK","short_venue":"Hyperliquid","long_venue":"Kraken Futures","short_raw_symbol":"kBONK","long_raw_symbol":"PF_BONKUSD","short_apr_pct":10.95,"long_apr_pct":-36.02,"gross_spread_apr_pct":46.97,"net_spread_apr_pct":46.12,"min_oi_usd":82208.54,"short_oi_usd":2585871.14,"long_oi_usd":82208.54,"mark_price_usd":0.002136,"daily_yield_per_10k_usd":12.64,"annual_yield_per_10k_usd":4612.0},{"symbol":"POL","short_venue":"Hyperliquid","long_venue":"Kraken Futures","short_raw_symbol":"POL","long_raw_symbol":"PF_POLUSD","short_apr_pct":10.95,"long_apr_pct":-35.5,"gross_spread_apr_pct":46.45,"net_spread_apr_pct":45.6,"min_oi_usd":678481.58,"short_oi_usd":3256978.26,"long_oi_usd":678481.58,"mark_price_usd":0.07608,"daily_yield_per_10k_usd":12.49,"annual_yield_per_10k_usd":4560.0},{"symbol":"JTO","short_venue":"Kraken Futures","long_venue":"Hyperliquid","short_raw_symbol":"PF_JTOUSD","long_raw_symbol":"JTO","short_apr_pct":56.82,"long_apr_pct":10.95,"gross_spread_apr_pct":45.87,"net_spread_apr_pct":45.02,"min_oi_usd":172908.1,"short_oi_usd":172908.1,"long_oi_usd":1196488.58,"mark_price_usd":0.234566,"daily_yield_per_10k_usd":12.33,"annual_yield_per_10k_usd":4502.0}],"major_benchmarks":[{"symbol":"BTC","hyperliquid_apr_pct":5.09,"kraken_apr_pct":11.45,"dydx_apr_pct":4.48,"total_oi_usd":2294335742.02},{"symbol":"ETH","hyperliquid_apr_pct":5.61,"kraken_apr_pct":1.33,"dydx_apr_pct":11.24,"total_oi_usd":1091488718.86},{"symbol":"SOL","hyperliquid_apr_pct":-6.36,"kraken_apr_pct":-13.22,"dydx_apr_pct":5.22,"total_oi_usd":316755015.93},{"symbol":"XRP","hyperliquid_apr_pct":10.95,"kraken_apr_pct":0.28,"dydx_apr_pct":0.0,"total_oi_usd":72039530.05},{"symbol":"DOGE","hyperliquid_apr_pct":-5.99,"kraken_apr_pct":13.49,"dydx_apr_pct":0.6,"total_oi_usd":25893610.82},{"symbol":"AVAX","hyperliquid_apr_pct":2.79,"kraken_apr_pct":-18.9,"dydx_apr_pct":null,"total_oi_usd":13621606.73}]},"shopify_b2b_leads":{"actor_url":"https://apify.com/conscious_chuckwalla/shopify-leads-tech-stack-intel","detected_signatures_count":46,"enrichment_fields":["domain","merchant_brand","verified_emails","instagram_tiktok_linkedin","esp_crm_stack","ad_pixels_detected","active_sku_count","median_price_usd","estimated_revenue_tier"],"sample_segments":[{"segment":"DTC Beauty & Skincare ($2M\u2013$25M GMV)","tech_filter":"Shopify Plus + Klaviyo + Meta/TikTok Pixel + Gorgias","median_aov_usd":68.5,"email_hit_rate_pct":84.2,"typical_use_case":"Retention agency & B2B SaaS outbound prospecting"},{"segment":"Performance Apparel & Athleisure","tech_filter":"Shopify + Attentive SMS + Triple Whale + Loop Returns","median_aov_usd":114.0,"email_hit_rate_pct":79.6,"typical_use_case":"3PL fulfillment, ad-tech & post-purchase SaaS sales"},{"segment":"Specialty Food, Beverage & Supplements","tech_filter":"Shopify + Recharge Subscriptions + Okendo + Postscript","median_aov_usd":54.0,"email_hit_rate_pct":86.8,"typical_use_case":"Subscription churn tooling & wholesale CPG buyers"},{"segment":"Home Goods & Industrial Hardware DTC","tech_filter":"Shopify + Affirm/Klarna BNPL + Yotpo + Zendesk","median_aov_usd":289.0,"email_hit_rate_pct":81.4,"typical_use_case":"B2B financing, freight & conversion optimization"}]}}</script>
+
+  <script>
+    (function () {
+      "use strict";
+
+      // Font-ready entrance settle
+      if (document.fonts && document.fonts.ready) {
+        Promise.race([
+          document.fonts.ready,
+          new Promise(function (r) { setTimeout(r, 350); })
+        ]).then(function () {
+          setTimeout(function () {
+            document.documentElement.classList.remove("entrance");
+          }, 1150);
+        });
+      }
+
+      var MCP_CONFIG_SNIPPET = JSON.stringify({
+        mcpServers: {
+          "quant-b2b-intel": {
+            command: "uvx",
+            args: [
+              "--from",
+              "git+https://github.com/zk16k123-svg/quant-b2b-intel-hub",
+              "quant-b2b-intel-mcp"
+            ],
+            env: {
+              APIFY_TOKEN: "apify_api_YOUR_TOKEN_HERE"
+            }
+          }
+        }
+      }, null, 2);
+
+      var PYTHON_SNIPPET = [
+        "import os, requests",
+        "",
+        "APIFY_TOKEN = os.environ['APIFY_TOKEN']  # Free token: https://console.apify.com/settings/integrations",
+        "",
+        "# 1. Polymarket & Kalshi Arbitrage + L2 Orderbook Slippage",
+        "resp = requests.post(",
+        "    'https://api.apify.com/v2/acts/conscious_chuckwalla~prediction-market-arb-intel/run-sync-get-dataset-items',",
+        "    params={'token': APIFY_TOKEN, 'clean': 'true'},",
+        "    json={'mode': 'all', 'venues': ['polymarket', 'kalshi'], 'includeOrderbookDepth': True, 'maxResults': 100},",
+        "    timeout=90,",
+        ")",
+        "signals = resp.json()",
+        "print(f'Fetched {len(signals)} live arbitrage & L2 market records')"
+      ].join("\n");
+
+      var CURL_SNIPPET = [
+        "# Run Crypto Perp Funding-Rate Carry Arbitrage synchronously via Apify REST API",
+        "curl -X POST \"https://api.apify.com/v2/acts/conscious_chuckwalla~crypto-funding-rate-carry-arb/run-sync-get-dataset-items?token=$APIFY_TOKEN\" \\",
+        "  -H \"Content-Type: application/json\" \\",
+        "  -d '{",
+        "    \"minNetSpreadAprPct\": 15.0,",
+        "    \"minOpenInterestUsd\": 100000,",
+        "    \"notionalUsd\": 50000,",
+        "    \"maxResults\": 50",
+        "  }'"
+      ].join("\n");
+
+      var SNIPPETS = {
+        mcp: MCP_CONFIG_SNIPPET,
+        python: PYTHON_SNIPPET,
+        curl: CURL_SNIPPET
+      };
+
+      var state = {
+        feed: null,
+        activeTab: "prediction",
+        predView: "spreads",
+        predQuery: "",
+        notionalUsd: 10000,
+        selectedCarryIdx: 0,
+        activeSnippet: "mcp"
+      };
+
+      function fmtNum(n, digits) {
+        if (n === null || n === undefined || isNaN(n)) return "—";
+        return Number(n).toLocaleString("en-US", {
+          minimumFractionDigits: digits || 0,
+          maximumFractionDigits: digits || 0
+        });
+      }
+
+      function fmtUsdCompact(n) {
+        if (n === null || n === undefined || isNaN(n)) return "—";
+        var abs = Math.abs(n);
+        if (abs >= 1e9) return "$" + (n / 1e9).toFixed(2) + "B";
+        if (abs >= 1e6) return "$" + (n / 1e6).toFixed(2) + "M";
+        if (abs >= 1e3) return "$" + (n / 1e3).toFixed(1) + "k";
+        return "$" + Number(n).toFixed(0);
+      }
+
+      function fmtSignedPct(n) {
+        if (n === null || n === undefined || isNaN(n)) return { text: "—", cls: "neutral-val" };
+        var v = Number(n);
+        if (v > 0) return { text: "+" + v.toFixed(2) + "%", cls: "pos-val" };
+        if (v < 0) return { text: v.toFixed(2) + "%", cls: "neg-val" };
+        return { text: "0.00%", cls: "neutral-val" };
+      }
+
+      function esc(str) {
+        return String(str == null ? "" : str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      var toastTimer = null;
+      function showToast(msg) {
+        var el = document.getElementById("toast");
+        if (!el) return;
+        el.textContent = msg;
+        el.classList.add("visible");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          el.classList.remove("visible");
+        }, 2200);
+      }
+
+      function copyText(txt, label) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(txt).then(function () {
+            showToast(label || "Copied to clipboard");
+          }).catch(function () {
+            fallbackCopy(txt, label);
+          });
+        } else {
+          fallbackCopy(txt, label);
+        }
+      }
+
+      function fallbackCopy(txt, label) {
+        var ta = document.createElement("textarea");
+        ta.value = txt;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); } catch (e) {}
+        document.body.removeChild(ta);
+        showToast(label || "Copied to clipboard");
+      }
+
+      // Spring-sliding tab indicator
+      function updateTabIndicator() {
+        var activeBtn = document.querySelector('.tab-btn[aria-selected="true"]');
+        var ind = document.getElementById("tab-indicator");
+        if (!activeBtn || !ind) return;
+        ind.style.width = activeBtn.offsetWidth + "px";
+        ind.style.transform = "translateX(" + activeBtn.offsetLeft + "px)";
+      }
+
+      function setSlipForTab(tab) {
+        var titleEl = document.getElementById("slip-title");
+        var descEl = document.getElementById("slip-desc");
+        var kv1 = document.getElementById("kv-1");
+        var kv2 = document.getElementById("kv-2");
+        var kv3 = document.getElementById("kv-3");
+        var kv4 = document.getElementById("kv-4");
+        var cta = document.getElementById("slip-primary-cta");
+        var ctaLbl = document.getElementById("slip-primary-cta-label");
+        if (!state.feed) return;
+
+        if (tab === "prediction") {
+          var peakBps = (state.feed.summary && state.feed.summary.peak_prediction_edge_bps) || 0;
+          titleEl.textContent = "Polymarket × Kalshi Arbitrage";
+          descEl.textContent = "Full Apify Cloud execution unlocks 3,400+ active contracts, live L2 CLOB depth, $1,000 VWAP slippage, and cross-venue probability matching.";
+          kv1.textContent = "Cross-Venue & NegRisk";
+          kv2.textContent = "+" + fmtNum(peakBps, 1) + " bps";
+          kv2.className = "paper-pos";
+          kv3.textContent = "3,400+ Active Markets";
+          kv4.textContent = "L2 Book + $1k VWAP";
+          cta.href = "https://apify.com/conscious_chuckwalla/prediction-market-arb-intel";
+          ctaLbl.textContent = "Run Prediction Intel on Apify";
+        } else if (tab === "funding") {
+          var spreads = (state.feed.perp_funding_carry && state.feed.perp_funding_carry.top_carry_spreads) || [];
+          var row = spreads[state.selectedCarryIdx] || spreads[0];
+          if (row) {
+            var annualUsd = state.notionalUsd * (row.net_spread_apr_pct / 100);
+            titleEl.textContent = row.symbol + " Delta-Neutral Carry";
+            descEl.textContent = "Short " + row.short_venue + " (" + (row.short_apr_pct >= 0 ? "+" : "") + row.short_apr_pct.toFixed(2) + "% APR) + Long " + row.long_venue + " (" + (row.long_apr_pct >= 0 ? "+" : "") + row.long_apr_pct.toFixed(2) + "% APR).";
+            kv1.textContent = row.short_venue + " / " + row.long_venue;
+            kv2.textContent = "+" + row.net_spread_apr_pct.toFixed(2) + "% Net APR";
+            kv2.className = "paper-pos";
+            kv3.textContent = fmtUsdCompact(row.min_oi_usd) + " Min Leg OI";
+            kv4.textContent = "+$" + fmtNum(annualUsd, 0) + "/yr @ $" + fmtNum(state.notionalUsd, 0);
+          }
+          cta.href = "https://apify.com/conscious_chuckwalla/crypto-funding-rate-carry-arb";
+          ctaLbl.textContent = "Run Full Perp Carry on Apify";
+        } else if (tab === "shopify") {
+          titleEl.textContent = "Shopify Leads & Tech Stack";
+          descEl.textContent = "Enrich DTC domains or niche keywords with verified decision-maker emails, social links, SKU pricing, and 46 SaaS/pixel signatures.";
+          kv1.textContent = "46 SaaS & Pixel Signatures";
+          kv2.textContent = "83.0% Avg Email Hit";
+          kv2.className = "paper-pos";
+          kv3.textContent = "Shopify & Shopify Plus";
+          kv4.textContent = "CSV / JSON / MCP Ready";
+          cta.href = "https://apify.com/conscious_chuckwalla/shopify-leads-tech-stack-intel";
+          ctaLbl.textContent = "Run Shopify Enricher on Apify";
+        } else {
+          titleEl.textContent = "AI-Agent MCP & REST Bridge";
+          descEl.textContent = "Connect Claude Desktop, Cursor, Windsurf, or Cline to all three Apify Cloud Actors with a single stdio MCP configuration.";
+          kv1.textContent = "stdio JSON-RPC 2.0";
+          kv2.textContent = "4 Live Agent Tools";
+          kv2.className = "paper-pos";
+          kv3.textContent = "Python 3.10+ / uvx";
+          kv4.textContent = "Pay-Per-Event Cloud";
+          cta.href = "https://apify.com/conscious_chuckwalla/prediction-market-arb-intel";
+          ctaLbl.textContent = "Get Apify Token & Try Free";
+        }
+      }
+
+      function switchTab(tabId) {
+        state.activeTab = tabId;
+        document.querySelectorAll(".tab-btn").forEach(function (btn) {
+          var active = btn.getAttribute("data-tab") === tabId;
+          btn.setAttribute("aria-selected", active ? "true" : "false");
+        });
+        document.querySelectorAll(".tab-panel").forEach(function (p) {
+          p.classList.toggle("active", p.id === "panel-" + tabId);
+        });
+        updateTabIndicator();
+        setSlipForTab(tabId);
+      }
+
+      function renderSummary() {
+        var f = state.feed;
+        if (!f) return;
+        var s = f.summary || {};
+        document.getElementById("kpi-total-markets").textContent = fmtNum(s.total_live_markets_ingested || 0, 0);
+        document.getElementById("kpi-venues-breakdown").textContent =
+          fmtNum(s.prediction_contracts_scanned || 0, 0) + " Prediction · " + fmtNum(s.perp_contracts_scanned || 0, 0) + " Perp Contracts";
+
+        var peakApr = Number(s.peak_perp_carry_net_apr_pct || 0);
+        var aprEl = document.getElementById("kpi-peak-apr");
+        aprEl.textContent = (peakApr >= 0 ? "+" : "") + peakApr.toFixed(2) + "%";
+        aprEl.className = "kpi-num tabular " + (peakApr >= 0 ? "positive" : "negative");
+
+        var topCarry = (f.perp_funding_carry && f.perp_funding_carry.top_carry_spreads && f.perp_funding_carry.top_carry_spreads[0]) || null;
+        if (topCarry) {
+          document.getElementById("kpi-peak-apr-pair").textContent =
+            topCarry.symbol + " · Short " + topCarry.short_venue + " / Long " + topCarry.long_venue;
+        }
+
+        var peakBps = Number(s.peak_prediction_edge_bps || 0);
+        document.getElementById("kpi-peak-bps").textContent = "+" + fmtNum(peakBps, 0) + " bps";
+
+        if (f.updated_at_utc) {
+          var parts = String(f.updated_at_utc).replace("Z", "").split("T");
+          document.getElementById("kpi-updated-clock").textContent = (parts[1] ? parts[1].slice(0, 5) : "LIVE") + " UTC";
+          document.getElementById("kpi-updated-date").textContent = (parts[0] || "") + " · Hourly GitHub Cron";
+          document.getElementById("nav-sync-label").textContent = "SYNCED " + (parts[1] ? parts[1].slice(0, 5) : "") + " UTC";
+        }
+        document.getElementById("pred-count-inline").textContent = fmtNum(s.prediction_contracts_scanned || 0, 0);
+      }
+
+      function renderPredictionTables() {
+        var pm = (state.feed && state.feed.prediction_markets) || {};
+        var q = state.predQuery.trim().toLowerCase();
+
+        var spreads = (pm.top_spreads || []).filter(function (r) {
+          return !q || JSON.stringify(r).toLowerCase().indexOf(q) !== -1;
+        });
+
+        var spreadsHtml = spreads.map(function (r, idx) {
+          var dte = r.days_to_expiry != null ? r.days_to_expiry.toFixed(0) + "d" : "Live";
+          return (
+            '<tr data-pred-spread-idx="' + idx + '">' +
+              '<td><span class="badge-pill badge-pos">' + esc(r.signal_type) + '</span><div class="contract-legs">' + esc(r.venues) + '</div></td>' +
+              '<td><div class="contract-title">' + esc(r.title) + '</div><div class="contract-legs">' + esc(r.leg_a) + ' · ' + esc(r.leg_b) + '</div></td>' +
+              '<td class="num-right">' + Number(r.yes_prob_pct || 0).toFixed(1) + '%</td>' +
+              '<td class="num-right pos-val">+' + fmtNum(r.edge_bps, 1) + ' bps</td>' +
+              '<td class="num-right">' + fmtUsdCompact(r.volume_24h_usd) + '</td>' +
+              '<td class="num-right neutral-val">' + esc(dte) + '</td>' +
+            '</tr>'
+          );
+        }).join("");
+        document.getElementById("pred-spreads-tbody").innerHTML = spreadsHtml || '<tr><td colspan="6" class="neutral-val">No matching spreads for current filter.</td></tr>';
+
+        var contracts = (pm.top_contracts || []).filter(function (c) {
+          return !q || JSON.stringify(c).toLowerCase().indexOf(q) !== -1;
+        });
+        var contractsHtml = contracts.map(function (c) {
+          var yBid = (Number(c.yes_bid || 0) * 100).toFixed(1) + "¢";
+          var yAsk = (Number(c.yes_ask || 0) * 100).toFixed(1) + "¢";
+          var nAsk = (Number(c.no_ask || 0) * 100).toFixed(1) + "¢";
+          return (
+            '<tr onclick="window.open(\'' + esc(c.url) + '\', \'_blank\', \'noopener\')">' +
+              '<td><span class="badge-pill">' + esc(c.venue) + '</span><div class="contract-legs">' + esc(c.category) + '</div></td>' +
+              '<td><div class="contract-title">' + esc(c.question) + '</div><div class="contract-legs">' + esc(c.ticker) + '</div></td>' +
+              '<td class="num-right">' + yBid + ' / ' + yAsk + '</td>' +
+              '<td class="num-right">' + nAsk + '</td>' +
+              '<td class="num-right neutral-val">' + fmtNum(c.spread_bps, 0) + ' bps</td>' +
+              '<td class="num-right pos-val">' + fmtUsdCompact(c.volume_24h_usd) + '</td>' +
+            '</tr>'
+          );
+        }).join("");
+        document.getElementById("pred-contracts-tbody").innerHTML = contractsHtml || '<tr><td colspan="6" class="neutral-val">No matching contracts for current filter.</td></tr>';
+
+        // Click row -> inspect in right paper slip
+        document.querySelectorAll("#pred-spreads-tbody tr[data-pred-spread-idx]").forEach(function (tr) {
+          tr.addEventListener("click", function () {
+            var i = Number(tr.getAttribute("data-pred-spread-idx"));
+            var item = spreads[i];
+            if (!item) return;
+            document.getElementById("slip-title").textContent = item.title;
+            document.getElementById("slip-desc").textContent = item.leg_a + " ↔ " + item.leg_b + ". Verify live L2 orderbook depth & $1k VWAP fill slippage on Apify Cloud.";
+            document.getElementById("kv-1").textContent = item.signal_type;
+            var kv2 = document.getElementById("kv-2");
+            kv2.textContent = "+" + fmtNum(item.edge_bps, 1) + " bps";
+            kv2.className = "paper-pos";
+            document.getElementById("kv-3").textContent = fmtUsdCompact(item.volume_24h_usd) + " (24h)";
+            document.getElementById("kv-4").textContent = item.venues;
+          });
+        });
+      }
+
+      function renderFundingCarry() {
+        var block = (state.feed && state.feed.perp_funding_carry) || {};
+        var spreads = block.top_carry_spreads || [];
+        var notional = Math.max(0, Number(state.notionalUsd) || 10000);
+
+        document.getElementById("th-notional-col").textContent = "Annual / " + fmtUsdCompact(notional);
+
+        var selected = spreads[state.selectedCarryIdx] || spreads[0];
+        if (selected) {
+          var netApr = Number(selected.net_spread_apr_pct || 0);
+          var annual = notional * (netApr / 100);
+          var daily = annual / 365;
+          var monthly = daily * 30;
+          document.getElementById("calc-selected-sym").textContent =
+            selected.symbol + " (SHORT " + selected.short_venue.toUpperCase() + " / LONG " + selected.long_venue.toUpperCase() + ")";
+          document.getElementById("calc-daily-usd").textContent = "+$" + fmtNum(daily, 2);
+          document.getElementById("calc-monthly-usd").textContent = "+$" + fmtNum(monthly, 2);
+          document.getElementById("calc-annual-usd").textContent = "+$" + fmtNum(annual, 0);
+        }
+
+        var rowsHtml = spreads.map(function (r, idx) {
+          var sFmt = fmtSignedPct(r.short_apr_pct);
+          var lFmt = fmtSignedPct(r.long_apr_pct);
+          var nFmt = fmtSignedPct(r.net_spread_apr_pct);
+          var annUsd = notional * (Number(r.net_spread_apr_pct || 0) / 100);
+          var selCls = idx === state.selectedCarryIdx ? ' class="selected-row"' : "";
+          return (
+            '<tr data-carry-idx="' + idx + '"' + selCls + '>' +
+              '<td><strong class="tabular">' + esc(r.symbol) + '</strong><div class="contract-legs">$' + Number(r.mark_price_usd || 0).toPrecision(4) + '</div></td>' +
+              '<td>' + esc(r.short_venue) + '<div class="contract-legs">' + esc(r.short_raw_symbol) + '</div></td>' +
+              '<td>' + esc(r.long_venue) + '<div class="contract-legs">' + esc(r.long_raw_symbol) + '</div></td>' +
+              '<td class="num-right ' + sFmt.cls + '">' + sFmt.text + '</td>' +
+              '<td class="num-right ' + lFmt.cls + '">' + lFmt.text + '</td>' +
+              '<td class="num-right ' + nFmt.cls + '">' + nFmt.text + '</td>' +
+              '<td class="num-right">' + fmtUsdCompact(r.min_oi_usd) + '</td>' +
+              '<td class="num-right pos-val">+$' + fmtNum(annUsd, 0) + '/yr</td>' +
+            '</tr>'
+          );
+        }).join("");
+        document.getElementById("perp-carry-tbody").innerHTML = rowsHtml;
+
+        document.querySelectorAll("#perp-carry-tbody tr[data-carry-idx]").forEach(function (tr) {
+          tr.addEventListener("click", function () {
+            state.selectedCarryIdx = Number(tr.getAttribute("data-carry-idx")) || 0;
+            renderFundingCarry();
+            if (state.activeTab === "funding") setSlipForTab("funding");
+          });
+        });
+
+        var bms = block.major_benchmarks || [];
+        document.getElementById("perp-benchmarks-strip").innerHTML = bms.map(function (b) {
+          function rateSpan(lbl, val) {
+            if (val === null || val === undefined) return '<span>' + lbl + ': <em style="font-style:normal;color:var(--ink-34)">—</em></span>';
+            var f = fmtSignedPct(val);
+            return '<span>' + lbl + ': <strong class="' + f.cls + '">' + f.text + '</strong></span>';
+          }
+          return (
+            '<div class="bm-cell">' +
+              '<div class="bm-sym"><span>' + esc(b.symbol) + '</span><span style="color:var(--ink-54);font-weight:400;">' + fmtUsdCompact(b.total_oi_usd) + '</span></div>' +
+              '<div class="bm-rates">' +
+                rateSpan("HL", b.hyperliquid_apr_pct) +
+                rateSpan("KR", b.kraken_apr_pct) +
+                rateSpan("DY", b.dydx_apr_pct) +
+              '</div>' +
+            '</div>'
+          );
+        }).join("");
+      }
+
+      function renderShopify() {
+        var block = (state.feed && state.feed.shopify_b2b_leads) || {};
+        var segs = block.sample_segments || [];
+        document.getElementById("shopify-segments-tbody").innerHTML = segs.map(function (s) {
+          return (
+            '<tr>' +
+              '<td><div class="contract-title">' + esc(s.segment) + '</div></td>' +
+              '<td><span class="tabular" style="font-size:12px;color:var(--ink-76);">' + esc(s.tech_filter) + '</span></td>' +
+              '<td class="num-right">$' + Number(s.median_aov_usd || 0).toFixed(2) + '</td>' +
+              '<td class="num-right pos-val">' + Number(s.email_hit_rate_pct || 0).toFixed(1) + '%</td>' +
+              '<td style="color:var(--ink-76);font-size:12.5px;">' + esc(s.typical_use_case) + '</td>' +
+            '</tr>'
+          );
+        }).join("");
+      }
+
+      function renderSdkSnippet() {
+        document.getElementById("sdk-code-display").textContent = SNIPPETS[state.activeSnippet] || MCP_CONFIG_SNIPPET;
+      }
+
+      function renderAll() {
+        renderSummary();
+        renderPredictionTables();
+        renderFundingCarry();
+        renderShopify();
+        renderSdkSnippet();
+        setSlipForTab(state.activeTab);
+        updateTabIndicator();
+      }
+
+      // Wire Interactive Controls
+      document.querySelectorAll(".tab-btn").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          switchTab(btn.getAttribute("data-tab"));
+        });
+      });
+
+      document.querySelectorAll("[data-switch-tab]").forEach(function (el) {
+        el.addEventListener("click", function () {
+          var t = el.getAttribute("data-switch-tab");
+          switchTab(t);
+          var tablist = document.getElementById("main-tablist");
+          if (tablist) tablist.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        });
+      });
+
+      document.querySelectorAll("[data-pred-view]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state.predView = btn.getAttribute("data-pred-view");
+          document.querySelectorAll("[data-pred-view]").forEach(function (b) {
+            b.classList.toggle("active", b === btn);
+          });
+          document.getElementById("pred-spreads-table").style.display = state.predView === "spreads" ? "" : "none";
+          document.getElementById("pred-contracts-table").style.display = state.predView === "contracts" ? "" : "none";
+        });
+      });
+
+      document.getElementById("pred-search").addEventListener("input", function (e) {
+        state.predQuery = e.target.value || "";
+        renderPredictionTables();
+      });
+
+      document.querySelectorAll("[data-notional]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var val = Number(btn.getAttribute("data-notional")) || 10000;
+          state.notionalUsd = val;
+          document.getElementById("custom-notional").value = String(val);
+          document.querySelectorAll("[data-notional]").forEach(function (b) {
+            b.classList.toggle("active", b === btn);
+          });
+          renderFundingCarry();
+          if (state.activeTab === "funding") setSlipForTab("funding");
+        });
+      });
+
+      document.getElementById("custom-notional").addEventListener("input", function (e) {
+        var val = Number(e.target.value);
+        if (!isNaN(val) && val >= 0) {
+          state.notionalUsd = val;
+          document.querySelectorAll("[data-notional]").forEach(function (b) {
+            b.classList.toggle("active", Number(b.getAttribute("data-notional")) === val);
+          });
+          renderFundingCarry();
+          if (state.activeTab === "funding") setSlipForTab("funding");
+        }
+      });
+
+      document.querySelectorAll("[data-snippet]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          state.activeSnippet = btn.getAttribute("data-snippet");
+          document.querySelectorAll("[data-snippet]").forEach(function (b) {
+            b.classList.toggle("active", b === btn);
+          });
+          renderSdkSnippet();
+        });
+      });
+
+      document.getElementById("masthead-copy-mcp").addEventListener("click", function () {
+        copyText(MCP_CONFIG_SNIPPET, "Copied Claude / Cursor MCP JSON config");
+      });
+      document.getElementById("slip-copy-mcp").addEventListener("click", function () {
+        copyText(MCP_CONFIG_SNIPPET, "Copied Claude / Cursor MCP JSON config");
+      });
+      document.getElementById("copy-active-snippet").addEventListener("click", function () {
+        copyText(SNIPPETS[state.activeSnippet] || MCP_CONFIG_SNIPPET, "Copied code snippet to clipboard");
+      });
+
+      window.addEventListener("resize", function () {
+        requestAnimationFrame(updateTabIndicator);
+      });
+
+      // 1. Hydrate immediately from embedded live snapshot (instantaneous + works on file://)
+      try {
+        var rawFallback = document.getElementById("fallback-live-feed").textContent;
+        state.feed = JSON.parse(rawFallback);
+        renderAll();
+      } catch (e) {}
+
+      // 2. Fetch latest hourly ./data/live_feed.json dynamically when served over HTTP(S)
+      fetch("./data/live_feed.json", { cache: "no-store" })
+        .then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
+        .then(function (liveData) {
+          if (liveData && liveData.summary) {
+            state.feed = liveData;
+            renderAll();
+          }
+        })
+        .catch(function () {
+          // Embedded snapshot already active
+        });
+    })();
+  </script>
+</body>
+</html>
