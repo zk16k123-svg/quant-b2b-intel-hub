@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.zk16k123-svg/crypto-funding-carry-arbitrage",
+  "title": "Crypto Perp Funding Rate & Delta-Neutral Carry MCP",
+  "description": "Hyperliquid, dYdX, Kraken & OKX perp funding rates, OI & delta-neutral carry yields.",
+  "repository": {
+    "url": "https://github.com/zk16k123-svg/quant-b2b-intel-hub",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/conscious_chuckwalla/crypto-funding-rate-carry-arb",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=conscious_chuckwalla/crypto-funding-rate-carry-arb",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token ('Bearer <apify-api-token>') from https://console.apify.com/settings/integrations",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

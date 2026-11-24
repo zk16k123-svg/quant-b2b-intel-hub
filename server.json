@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.zk16k123-svg/quant-b2b-intel-hub",
+  "title": "Quant & B2B Intelligence Hub (Polymarket, Perps & Shopify)",
+  "description": "Polymarket & Kalshi arbitrage, crypto perp funding carry & Shopify B2B leads via Apify MCP.",
+  "repository": {
+    "url": "https://github.com/zk16k123-svg/quant-b2b-intel-hub",
+    "source": "github"
+  },
+  "websiteUrl": "https://zk16k123-svg.github.io/quant-b2b-intel-hub/",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=conscious_chuckwalla/prediction-market-arb-intel,conscious_chuckwalla/crypto-funding-rate-carry-arb,conscious_chuckwalla/shopify-leads-tech-stack-intel",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify API token ('Bearer <apify-api-token>') from https://console.apify.com/settings/integrations",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
